@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>Track order</title>
+    <meta name="data-spm" content="a2d0j"/>
+    <link rel="shortcut icon" type="image/x-icon" href="//img.alibaba.com/images/eng/wholesale/icon/aliexpress.ico"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_r7kb5azlknpnwmi.css">
+    <link rel="stylesheet" href="//g.alicdn.com/cn/ae-physical-detail/2.0.0/styles/main.css">
+    <link rel="stylesheet" href="//g.alicdn.com/cn/ae-physical-detail/2.0.0/styles/footer.css">
+    <link rel="stylesheet" href="//g.alicdn.com/cn/ae-physical-detail/1.0.0/robot/robot.css">
+
+	<script type="text/javascript">
+	function dataProduct(){
+	var div = document.getElementById('uno');
+	var shipp = $('#Guia').val();
+		var body= {
+			action:'showData',
+			track_num:'shipp'
+		};
+		var divres = '';
+		$.ajax({
+			url:'http://localhost/Parcel/Server/',
+			type:'POST',
+			data:JSON.stringify(body),
+			contentType:'application/json',
+			dataType:'json',
+			async:false,
+			success:function(results){
+			var stringDatas = JSON.stringify(results);
+	             var arr = JSON.parse(stringDatas); 
+				 divres += '<table class="table table-hover"><thead><tr class="orange"><th></th></tr></thead><tbody>';
+	                       for(i = 0; i < arr.length; i++){
+	                        	divres += '<tr>';
+	                        	divres += '<td class="success">' + arr[i].Numero de envio + '</td>';
+								divres += '<td class="success">' + arr[i].Contenido del packete + '</td>';
+								divres += '</tr>';
+						   }
+					 div.innerHTML = divres;
+				  }
+				});	
+		}	
+	</script>
+	<script>
+		function miFuncion() {
+			alert('Hello');
+		}
+		</script>
+</head>
+<body data-spm="7922267" onload = "miFunction()">
+
+		<div>
+			<div class="pkg-title" id = "uno">
+			</div>
+		</div>
+<link  rel="stylesheet" type="text/css" />
+		<div>
+			<div class="pkg-title">
+			</div>
+		</div>
+<div class="top-lighthouse" id="top-lighthouse">
+	<div class="top-lighthouse-wrap container">
+	<div class="nav-global" id="nav-global" data-widget-cid="widget-2">
+		<div class="nav-global" id="nav-global">
+		</div>
+	</div>
+</div>
+
+<div class="me-header" id="header">
+	<div class="header-wrap container">
+		<div class="hm-left">
+		</div>
+		<div class="hm-right">
+		<div class="nav-user-account" id="nav-user-account" data-widget-cid="widget-8">
+		<div class="user-account-info" data-role="user-account-top" id="userAccountInfo">
+		</div>
+		</div>
+		</div>
+		</div>
+		<div>
+			<div class="">
+			</div>
+		</div>
+		<div class="main-region">
+			<div class="pkg-title">
+			</div>
+		</div>
+		<div>
+			<div class="pkg-title">
+			</div>
+		</div>
+		
+	<div class="container">
+		<div class="main-wrapper ">
+			<div class="main-region">
+				<div class="pkg-title">
+				<h3>informacion del paquete</h3>
+				</div>
+			</div>
+			<div class="main-tabs">
+			</div>
+			<div class>
+			</div>
+			<div class="tab-wrapper">
+			<div class="main-content">
+			<div class="main-region pkg-info">
+			<div class="pkg-nav global-action">
+			<div class="nav-steps">
+			<div class="nav-step nav-step-active">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line left">
+			<line x1="4" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<div class="step-content">
+			<div class="step-icon">
+			<i class="iconfont icon-baoguofahuo-xianxing">
+			</i>
+			</div>
+			<a href="//global.cainiao.com" target="_blank" class="current-img-icon">
+			<img src="" alt="current">
+			</a>
+			<p>
+			<span class="light-desc">Pedido enviado por vendedor</span>
+			</p>
+			</div>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line right">
+			<line x1="6" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<span class="step-tag step-circle"></span>
+			<span class="step-tag step-exception">
+			<i class="iconfont icon-gantanhao-yuankuang"></i>
+			</span>
+			</div>
+			<div class="nav-step nav-step-active nav-step-current">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line left">
+			<line x1="4" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<div class="step-content">
+			<div class="step-icon">
+			<i class="iconfont icon-touchengkongyun"></i>
+			</div>
+			<a href="//global.cainiao.com?spm=a2d0j.7922267.0.0.36e216a6Ikrsbf" target="_blank" class="current-img-icon" data-spm-anchor-id="a2d0j.7922267.0.0">
+			<img src="" alt="current">
+			</a>
+			<p>
+			<span class="light-desc">Salida de país de origen</span>
+			</p>
+			</div>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line right">
+			<line x1="6" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<span class="step-tag step-circle">
+			</span>
+			<span class="step-tag step-exception">
+			<i class="iconfont icon-gantanhao-yuankuang"></i>
+			</span>
+			</div>
+			<div class="nav-step">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line left">
+			<line x1="4" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<div class="step-content">
+			<div class="step-icon">
+			<i class="iconfont icon-weicheng">
+			</i>
+			</div>
+			<a href="" target="_blank" class="current-img-icon">
+			<img src="" alt="current">
+			</a>
+			<p>
+			<span class="light-desc">Llegada a país de destino</span>
+			</p>
+			</div>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line right">
+			<line x1="6" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<span class="step-tag step-circle"></span>
+			<span class="step-tag step-exception">
+			<i class="iconfont icon-gantanhao-yuankuang"></i>
+			</span>
+			</div>
+			<div class="nav-step">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line left">
+			<line x1="4" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<div class="step-content">
+			<div class="step-icon">
+			<i class="iconfont icon-qianshoushenpitongguo-xianxing"></i>
+			</div>
+			<a href="" target="_blank" class="current-img-icon">
+			<img src="" alt="current">
+			</a>
+			<p>
+			<span class="light-desc">Entregado</span>
+			</p>
+			</div>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="step-dash-line right">
+			<line x1="6" y1="3" x2="100%" y2="3"></line>
+			</svg>
+			<span class="step-tag step-circle"></span>
+			<span class="step-tag step-exception">
+			<i class="iconfont icon-gantanhao-yuankuang"></i>
+			</span>
+			</div>
+			</div>
+			</div>
+			<div>
+			<div class="pkg-content">
+			<div class="pkg-send-extra">
+			<div class="consume-time">
+			<span>sdexa</span>
+			<div class="time">
+			"
+          0.005 "
+			<span class="unit">asdx</span>
+			</div>
+			</div>
+			</div>
+			<div class="pkg-send-info">
+			<div class="pkg-send-status text-overflow">
+			<span>Parcel Status</span>
+			<span title="Salida del país original" class="status-txt">Salida del país original</span>
+			</div>
+			<div class="pkg-send-content">
+			<div class="send-content-left">
+			<div class="send-info-box">
+			<p class="box-track">
+              País de destino
+            </p>
+			<p class="box-country">
+              México
+            </p>
+			<p class="box-ship">
+			<a href="" target="_blank">Mexico Post</a>
+			</p>
+			<p class="box-serial">
+              
+            </p>
+			</div>
+			<div class="send-info-box">
+			<p class="box-track">
+              País de origen
+            </p>
+			<p class="box-country">
+              China
+            </p>
+			<p class="box-ship">
+			<span></span>
+			</p>
+			<p class="box-serial">
+              
+            </p>
+			</div>	
+			</div>
+			<div class="send-content-main">
+			<div>
+			<ul class="ship-steps">
+			<li class="step">
+			<div class="icon-con  icon-current icon-node">
+			<i class="iconfont icon-touchengkongyun">
+			</i>
+			</div>
+			<p>
+    Shipped by air
+  </p>
+			<p>
+   2017-07-22 06:32:06&nbsp;
+  </p>
+			</li>
+			<li class="step">
+			<div class="icon-con ">
+			<i class="iconfont"></i>
+			</div>
+			<p>
+    Export customs clearance complete
+  </p>
+			
+			<p>
+   2017-07-21 08:25:24&nbsp;
+  </p>
+			</li>
+			<li class="step">
+			<div class="icon-con ">
+			
+			<i class="iconfont"></i>
+			</div>
+			<p>
+    arrive export exchange
+  </p>
+			<p>
+   2017-07-21 00:05:22&nbsp;
+  </p>
+			</li>
+			<li class="step">
+			<div class="icon-con ">
+			<i class="iconfont"></i>
+			</div>
+			<p>
+    arrive export exchange
+  </p>
+			<p>
+   2017-07-20 10:04:59&nbsp;
+  </p>
+			</li>
+			</ul>
+			</div>
+			</div>
+			<div class="send-content-info">
+			"Data Provided by "
+			<a target="_blank" href="" data-goldlog="/cn.21.17.2,,,H46747614">sdex </a>
+			
+			</div>
+			</div>
+			<div class="send-content-footer no-border">
+			
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="main-region order-info-con">
+			<div class="ship-info">
+			<div class="order-item">
+			<label>Tracking number:</label>
+			<p class="info">io12347568932in</p>
+			</div>
+			<div class="order-item">
+			<label>Logistics company:</label>
+			<p class="info">China Post Air Parcel</p>
+			</div>
+			<div class="order-item">
+			<label>Shipment time:</label>
+			<p class="info">2017-07-15 20:35:06</p>
+			</div>
+			</div>
+			<div class="order-info">
+			<h3>Order information</h3>
+			<div class="order-item">
+			<label>Order number:</label>
+			<p class="info">
+			<a href="" target="_blank">
+           84857937483459
+           </a>
+			</p>
+			</div>
+			<div class="order-item">
+			<label>Shop name:</label>
+			<p class="info">
+			"
+           sadexasdexasedx asdxas asadxsadxsdx sdx
+           "
+		   <a href="" target="_blank" class="message-icon">
+			
+			<img src="">
+			
+			</a>
+			</p>
+			</div>
+			<div class="order-item">
+			<label>Receiver address: </label>
+			<p class="info">
+			"
+           asdxas,asdx,adexa,Mexico adx dftgv  4624564768
+         "
+			</p>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="tab-error" style="display: none;">
+			<div class="pkg-no-content">
+			<div class="pkg-no-content-notice">
+			<i class="iconfont icon-xinxi-yuankuang"></i>
+			<p class="pkg-no-content-tip">Tracking information is temporarily unavail<p class="pkg-no-content-desc">please check your network and your enter url</p>able.</p>
+			</div>	
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div>
+			<div class="pkg-title">
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+	<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  
+		<link rel ="stylesheet" href="css.css">
+		
+		<!--<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/jquery-3.2.1.js" type ="text/javascript"></script>
+		<script src="js/funciones.js" type ="text/javascript"></script>
+	
+	<!--<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>-->
+	<script src="js/jquery-3.1.1.js"></script> 
+
+	<link href ="https://fonts.googleapis.com/icon?family=Material+Icons" rel ="stylesheet">
+
+	<meta name "viewport" content="whidth=device-width, initial-scale=1">
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+
+	function trackship(){
+	var trackNumber = $('#Guia').val();
+		var body= {
+			action:'showData',
+			track_num:trackNumber,
+		};
+		$.ajax({
+			url:'http://localhost/Parcel/Server/',
+			type:'POST',
+			data:JSON.stringify(body),
+			contentType:'application/json',
+			dataType:'json',
+			async:false,
+			success:function(results){
+				if(trackNumber === ''){
+					alert("Favor de llenar el campos");
+				}else
+				if(results.length === 0){
+					alert("Datos incorrectos");
+				}else
+				if(trackNumber === trackNumber){
+					//abrirEnPestana(ur
+					window.location.href = ("tracknum.html");
+				}else{
+					///.....................................
+					}
+				  }
+				});	
+		}		
+		</script>
+		
+		<script>
+function keyCode(event) {
+    var x = event.keyCode;
+    if (x == 13) {
+        trackship();
+    }
+}
+</script>
+
+</head>
+
+<body>
+	   
+<div id="cuerpo">
+
+		<!--Renglón tipo 2-->
+		<div class="renglon">
+			<div class="cuadro B margen_derecho">
+				<div id="ctl00_PlaceHolderMain_ctl00__ControlWrapper_RichHtmlField" style="display:inline">
+				<p>
+				<span class=" breadcrumbCurrent "><span class=" ms-rteCustom-Titulo ">Rastrea tu Envío</span>
+				</span>
+				</p>
+<p>
+<span class=" ms-rteCustom-Titulo "></span>
+</p>
+<p>&nbsp;</p>
+</div>
+<div id="ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField" style="display:inline"></div>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td id="MSOZoneCell_WebPartWPQ1" valign="top">
+<table toplevel border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top">
+<div webpartid="f22eaa13-4dc9-4259-a77d-bf3a0962b570" haspers="false" id="WebPartWPQ1" width="100%" class="ms-WPBody" allowdelete="false" style="height:650px;overflow:auto;">
+
+
+
+	<div>
+	<br>
+	<table class ="Ajuste">
+	<tbody>
+	<tr>
+	<td style="text-align:center">
+				<span class="letra">Número de guía:</span>
+	<td style="width:220px">
+		<input name="Guia" type="text" placeholder = "traking number" maxlength="15" id="Guia" class="Texto" style = "width:160px;" onkeydown = "keyCode(event)">
+	
+		<td style=" vertical-align:middle;">
+		<select name="Periodo" id="Periodo" class="Texto">
+		<option value="2017">2017</option>
+		<option value="2016">2016</option>
+		</select>
+		<br>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		<br>
+		<div style="text-align:center;">
+		<input type="button" name="Busqueda" value="BUSCAR" onclick = "trackship();" id="Busqueda" class="btn btn-Verde" style="width:120px;"> <!--onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("trackship()", "", true, "Validar", "", false, true))"-->
+		<input type="button" name="Limpia" value="LIMPIAR" onclick="javascript:__doPostBack('Limpia','')" id="Limpia" class="btn btn-Morado" style="width:120px;margin-left: 0px">
+		<div>
+		<hr style="  border: 0; height: 1px; background-image: linear-gradient(to right, rgba(63, 189, 54, 0), rgba(63, 189, 54, 0.75), rgba(63, 189, 54, 0));">
+		<span id="Mensaje" class="mns" style="display:inline-block;width:100%;"></span>
+		</div>
+		
+		<select name="Periodo" id="Periodo" class="Texto">
+		<option value="2017">2017</option>
+		<option value="2016">2016</option>
+		</select>
+</body>
+</html>
